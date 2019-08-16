@@ -13,3 +13,4 @@ source use-new-launch-configuration.sh
 source scale-up.sh
 source wait-scale-up.sh
 source scale-down.sh
+source clear-redis.sh
