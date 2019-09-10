@@ -25,11 +25,11 @@ Default output format [None]:
 
 ## usage
 ```
-./deploy.sh {{ instance_id }}
+./deploy.sh {{ instance_id }} {{ xID/tID }}
 ```
 ### example
 ```
-$ ./deploy.sh i-a1b2c3d4
+$ ./deploy.sh i-a1b2c3d42hfhd x169954
 
 scan tags . done
 deploy app code . done
