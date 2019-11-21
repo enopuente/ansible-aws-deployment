@@ -7,8 +7,6 @@ Script that will build an image from a known instance, make a new launch configu
 ## dependancies
  * pip install awscli
  * jsawk
- * aws tags (Project, Role, Environment)
- * aws autoscaling groups
 
 ## configure
 in `config.sh` set your domain and desired number of instances in the auto scaling group.
@@ -23,13 +21,15 @@ Default region name [None]: us-west-2
 Default output format [None]: 
 ```
 
+You also need to add your x/tID in the `user_id` variable in `config.sh`.
+
 ## usage
 ```
-./deploy.sh {{ instance_id }} {{ xID/tID }}
+./deploy.sh staging|production
 ```
 ### example
 ```
-$ ./deploy.sh i-a1b2c3d42hfhd x169954
+$ ./deploy.sh staging
 
 find prototype region . done (us-west-2)
 scan tags . done

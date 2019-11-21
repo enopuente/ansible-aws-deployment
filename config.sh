@@ -1,4 +1,4 @@
-user_id=""
+user_id="x169954"
 domain=teluswebteam.com
 aws_regions=(us-west-2 us-west-1 us-east-1)
 autoscaling_group_desired_capacity_production=12
