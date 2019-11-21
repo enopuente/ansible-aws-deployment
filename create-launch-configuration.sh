@@ -1,4 +1,4 @@
-printf "create launch configuration ($launch_configuration_name)"
+printf "Create launch configuration ($launch_configuration_name)..."
 launch_configuration="aws autoscaling create-launch-configuration \
   --region $region \
   --launch-configuration-name $launch_configuration_name \
@@ -12,4 +12,4 @@ launch_configuration="aws autoscaling create-launch-configuration \
   fi
 
  `$launch_configuration`
-echo " . done"
+echo "Done"

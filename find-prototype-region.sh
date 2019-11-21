@@ -1,4 +1,4 @@
-printf "find prototype region"
+printf "Find prototype region..."
 
 region=''
 for this_region in "${aws_regions[@]}"
@@ -16,4 +16,4 @@ do
 	fi
 done
 
-echo " . done ($region)"
+echo "Done ($region)"

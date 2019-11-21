@@ -1,4 +1,4 @@
-printf "create image "
+printf "Create image... "
 image_id=`aws ec2 create-image --region $region --instance-id=$instance_id --name=$name | jsawk "return this.ImageId"`
 printf "$image_id from $instance_id"
 
@@ -16,4 +16,4 @@ do
     sleep 15
   fi
 done
-echo " done ($image_state)"
+echo "Done ($image_state)"

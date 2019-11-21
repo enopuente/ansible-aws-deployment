@@ -1,4 +1,4 @@
-printf "scale up"
+printf "Scaling up"
 autoscaling_group=`aws autoscaling update-auto-scaling-group \
   --region $region \
   --auto-scaling-group-name=$autoscaling_group_name \
@@ -17,4 +17,4 @@ do
     sleep 15
   fi
 done
-echo " done"
+echo "Done"

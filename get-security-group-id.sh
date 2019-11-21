@@ -1,4 +1,4 @@
-printf "get security group ids for $instance_id"
+printf "Get security group ids for $instance_id ..."
 number_of_security_groups=`aws ec2 describe-instances --region $region --instance-ids $instance_id | jsawk "return this.Reservations[0].Instances[0].SecurityGroups.length"`
 security_group_ids=""
 
@@ -12,4 +12,4 @@ do
     security_group_ids+=" "
   fi
 done
-echo " . done ($security_group_ids)"
+echo "Done ($security_group_ids)"

@@ -1,4 +1,4 @@
-printf "scan tags"
+printf "Scan tags..."
 cached_instance_json=`aws ec2 describe-instances \
   --region $region \
   --instance-ids $instance_id`
@@ -23,4 +23,4 @@ done
 
 instance_type=`echo $cached_instance_json | jsawk "return this.Reservations[0].Instances[0].InstanceType"`
 
-echo " . done"
+echo "Done"

@@ -1,4 +1,4 @@
-printf "Waiting for addition to ELB"
+printf "Waiting for instances to get added to the Load Balancer"
 cached_instance_json=`aws elb describe-instance-health \
   --region $region \
   --load-balancer-name $autoscaling_group_name`

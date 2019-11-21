@@ -1,4 +1,4 @@
-printf "Waiting for instance to become InService"
+printf "Waiting for instances to become InService"
 all_instances_inservice=false
 while [ $all_instances_inservice == false ]; do
   all_instances_inservice=true
